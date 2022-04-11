@@ -27,7 +27,7 @@ class test
 		test[] prd = new test[3];
 		
 		System.out.println("Enter the product details:");
-		
+		      
 		for(int i = 0; i<3; i++){
 			System.out.print("Code product " + (i+1) + ": ");
 			code = Integer.parseInt(sc.nextLine());
