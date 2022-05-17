@@ -93,7 +93,7 @@ array[i] = new Teacher(name,g,addr,age,emp_id,cmp_name,q,s,id,subject,dept);
 System.out.println("Details of Persons\n");
 for(Person p:array)
 {
-p.show();
+p.show(); 
 }
 }
 }
