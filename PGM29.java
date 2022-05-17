@@ -13,7 +13,7 @@ this.address=a;
 this.age=age;
 }
 public void show(){
-		System.out.println("name:" +name+ "address: " + address + "\ngender: " + gender + "\nage: " + age);
+		System.out.println("name:" +name+ "\naddress: " + address + "\ngender: " + gender + "\nage: " + age);
 	}
 }
 class Employee extends Person
@@ -32,7 +32,7 @@ this.salary=s;
 }
 public void show(){
                 super.show();
-		System.out.println("emp_id:" +empid+ "cmp_name: " + cmp_name + "\nqualification: " + qualification + "\nsalary: " + salary);
+		System.out.println("emp_id:" +empid+ "\ncmp_name: " + cmp_name + "\nqualification: " + qualification + "\nsalary: " + salary);
 	}
 }
 class Teacher extends Employee
@@ -49,7 +49,7 @@ this.teacher_id=id;
 }
 public void show(){
                 super.show();
-		System.out.println("subject:" +subject+ "dept: " + dept + "\nteacher_id: " + teacher_id);
+		System.out.println("\nsubject:" +subject+ "\ndept: " + dept + "\nteacher_id: " + teacher_id);
 	}
 }
 public class PGM29
@@ -89,6 +89,11 @@ String subject=obj.next();
 System.out.println("Enter the department\n");
 String dept=obj.next();
 array[i] = new Teacher(name,g,addr,age,emp_id,cmp_name,q,s,id,subject,dept);
+}
+System.out.println("Details of Persons\n");
+for(Person p:array)
+{
+p.show();
 }
 }
 }

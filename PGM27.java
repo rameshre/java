@@ -41,7 +41,7 @@ for(Employee e:array)
 {
 if(x==e.eno)
 {
-found=false;
+found=true;
 System.out.println("Employee found\n");
 e.showData();
 }
